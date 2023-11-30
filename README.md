@@ -59,7 +59,7 @@ docker-compose exec backend python manage.py collectstatic
 ```bash
 docker compose exec backend cp -r /app/collected_static/. /backend_static/static/
 # При выполнении команды на Windows может возникнуть ошибка "The system cannot find the file specified"
-# В таком случае выполните команду "cp -r /app/collected_static/. /static/static/"
+# В таком случае выполните команду "cp -r /app/collected_static/. /backend_static/static/"
 # через терменал backend-контейнера в десктоп-приложении Docker
 ```
 
