@@ -55,7 +55,7 @@ docker-compose exec backend python manage.py createsuperuser
 docker-compose exec backend python manage.py collectstatic
 ```
 
-- Скопируйте файлы статики в /static/static/ backend-контейнера :
+- Скопируйте файлы статики в /backend_static/static/ backend-контейнера :
 ```bash
 docker compose exec backend cp -r /app/collected_static/. /backend_static/static/
 # При выполнении команды на Windows может возникнуть ошибка "The system cannot find the file specified"
